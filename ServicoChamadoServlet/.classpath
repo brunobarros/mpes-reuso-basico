@@ -3,7 +3,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/Bruno/Dropbox/Mestrado CESAR/Engenharia de Reuso/1 - Básico/trabalho/com.springsource.javax.servlet-2.5.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Bruno/Dropbox/Mestrado CESAR/Engenharia de Reuso/1 - Básico/trabalho/org.osgi.compendium-4.1.0.jar"/>
+	<classpathentry kind="lib" path="../libs/com.springsource.javax.servlet-2.5.0.jar"/>
+	<classpathentry kind="lib" path="../libs/org.osgi.compendium-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.3.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

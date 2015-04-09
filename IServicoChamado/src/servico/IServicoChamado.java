@@ -1,17 +1,12 @@
 package servico;
 
-import java.util.Map;
-
 import chamado.Chamado;
+import chamado.TipoChamado;
 
 public interface IServicoChamado {
 	
-	String descricaoServico();
+	TipoChamado getTipoChamado();
 
-	Map<String, String> getAtributosInput();
-
-	String getTipoChamado();
-	
 	Chamado abrirChamado(Chamado chamado);
 	
 }

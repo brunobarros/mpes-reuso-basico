@@ -13,14 +13,14 @@ public class Chamado {
 	private String status; //O - Open, P - Progress, F - Finished
 	private double latitude;
 	private double longitude;
-	private String tipoChamado;
+	private TipoChamado tipoChamado;
 	
 	public Chamado() {
 	
 	}
 
 	public Chamado(String descricao, Date dataHoraAbertura, String status,
-			double latitude, double longitude, String tipoChamado) {
+			double latitude, double longitude, TipoChamado tipoChamado) {
 		super();
 		this.descricao = descricao;
 		this.dataHoraAbertura = dataHoraAbertura;
@@ -70,11 +70,11 @@ public class Chamado {
 		this.longitude = longitude;
 	}
 
-	public String getTipoChamado() {
+	public TipoChamado getTipoChamado() {
 		return tipoChamado;
 	}
 
-	public void setTipoChamado(String tipoChamado) {
+	public void setTipoChamado(TipoChamado tipoChamado) {
 		this.tipoChamado = tipoChamado;
 	}
 	

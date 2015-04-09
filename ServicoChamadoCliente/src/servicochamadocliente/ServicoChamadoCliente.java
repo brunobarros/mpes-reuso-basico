@@ -32,7 +32,7 @@ public class ServicoChamadoCliente extends JFrame {
 				if (servicosChamado == null || servicosChamado.isEmpty()) {
 					message = "Serviços indisponíveis";
 				} else {
-					message = servicosChamado.get(0).descricaoServico();
+					message = servicosChamado.get(0).toString();
 				}
 				JOptionPane.showMessageDialog(null, message);
 			}

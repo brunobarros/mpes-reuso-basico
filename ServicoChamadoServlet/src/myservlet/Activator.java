@@ -32,7 +32,8 @@ public class Activator implements BundleActivator {
 		ServiceReference sr = context.getServiceReference(HttpService.class);
 		HttpService http = (HttpService) context.getService(sr);
 		if (http != null) {
-			http.registerServlet("/chamado", new ChamadoServlet(servicosChamado), null, null);
+			http.registerServlet("/chamados", new ChamadoServlet(servicosChamado), null, null);
+			http.registerServlet("/chamados/tiposchamados", new TipoChamadoServlet(servicosChamado), null, null);
 			System.out.println("Servlet(s) registrado(s)");
 		}
 	}

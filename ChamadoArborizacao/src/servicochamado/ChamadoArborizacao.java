@@ -4,32 +4,27 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import servico.IServicoChamado;
 import chamado.Chamado;
 import chamado.ChamadoRepository;
-import servico.IServicoChamado;
+import chamado.TipoChamado;
 
 
 public class ChamadoArborizacao implements IServicoChamado {
 
 	@Override
-	public String descricaoServico() {
-		return "Arborização (poda de árvore)";
-	}
-
-	@Override
-	public Map<String, String> getAtributosInput() {
+	public TipoChamado getTipoChamado() {
 		Map<String, String> atributos = new HashMap<String, String>();
-		atributos.put("descricao", "texto");
+		atributos.put("descricao", "text");
 		atributos.put("latitude", "double");
 		atributos.put("longitude", "double");
-		return atributos ;
+		
+		TipoChamado tipoChamado = new TipoChamado("A", "Arborização (poda de árvore)");
+		tipoChamado.setAtributosInput(atributos);
+		
+		return tipoChamado;
 	}
-
-	@Override
-	public String getTipoChamado() {
-		return "A"; //Arborização
-	}
-
+	
 	@Override
 	public Chamado abrirChamado(Chamado chamado) {
 		chamado.setDataHoraAbertura(new Date());
