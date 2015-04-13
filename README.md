@@ -25,3 +25,7 @@ ps. Lembrando que é para o dia 13/05, precisamos que seja entregue no máximo d
 * Importar o Launch configuration na raiz do repositório: Servico Chamado Servlet (OSGi).launch
 * Run do framework OSGi com os bundles do projeto 
 * executar stop e start do bundle de servlet para deixá-lo por último na prioridade dos bundles e que os tipos de chamados fiquem disponíveis 
+  * lb (listar os bundles)
+  * stop [id do bundle ServicoChamadoServlet]
+  * start [id do bundle ServicoChamadoServlet]
+* Acessar http://localhost:8080/chamados
