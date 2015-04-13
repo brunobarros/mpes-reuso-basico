@@ -21,7 +21,7 @@ ps. Lembrando que é para o dia 13/05, precisamos que seja entregue no máximo d
 
 # Setup
 
-* adicionar jars externos ao bundle de servlet: Servlet	API e OSGi	compendium (ver exercício de Servlet com OSGi)
+* Importar projetos no Eclipse
 * Importar o Launch configuration na raiz do repositório: Servico Chamado Servlet (OSGi).launch
 * Run do framework OSGi com os bundles do projeto 
-* executar stop e start dos bundles servlet e tipos de chamados até que fiquem todos disponíveis 
+* executar stop e start do bundle de servlet para deixá-lo por último na prioridade dos bundles e que os tipos de chamados fiquem disponíveis 
