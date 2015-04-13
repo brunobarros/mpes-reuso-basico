@@ -3,6 +3,7 @@ package myservlet;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +15,7 @@ import chamado.TipoChamado;
 
 import com.google.gson.Gson;
 
+@SuppressWarnings("serial")
 public class TipoChamadoServlet extends HttpServlet {
 	
 	private List<IServicoChamado> servicoChamados;
@@ -31,7 +33,12 @@ public class TipoChamadoServlet extends HttpServlet {
 		} else {
 			List<TipoChamado> tiposChamados = new ArrayList<TipoChamado>();
 			for (IServicoChamado iServicoChamado : servicoChamados) {
-				tiposChamados.add(iServicoChamado.getTipoChamado());
+				Map<String, String> atributos = iServicoChamado.getAtributosInput();
+				
+				TipoChamado tipoChamado = new TipoChamado(iServicoChamado.getSigla(), iServicoChamado.getDescricao());
+				tipoChamado.setAtributosInput(atributos);
+				
+				tiposChamados.add(tipoChamado);
 			}
 			
 			Gson gson = new Gson();

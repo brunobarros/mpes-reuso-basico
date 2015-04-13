@@ -19,6 +19,7 @@ public class Activator implements BundleActivator {
 		return context;
 	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public void start(BundleContext bundleContext) throws Exception {
 		Activator.context = bundleContext;
 		

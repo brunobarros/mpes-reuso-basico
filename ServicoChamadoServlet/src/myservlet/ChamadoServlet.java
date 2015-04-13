@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import servico.IServicoChamado;
 
+@SuppressWarnings("serial")
 public class ChamadoServlet extends HttpServlet {
 	
 	private List<IServicoChamado> servicoChamados;
@@ -32,14 +33,14 @@ public class ChamadoServlet extends HttpServlet {
 		
 		resp.getWriter().write("<ul>");
 		for (IServicoChamado iServicoChamado : servicoChamados) {
-			resp.getWriter().write("<li>" + iServicoChamado.getTipoChamado().getDescricao() + "</li>");
+			resp.getWriter().write("<li>" + iServicoChamado.getDescricao() + "</li>");
 		}
 		resp.getWriter().write("</ul>");
 
 		resp.getWriter().write("<h3>Serviços REST</h3>");
 		
 		resp.getWriter().write("<ul>");
-		resp.getWriter().write("<li><a href='tiposchamados'>GET http://localhost:8080/chamados/tiposchamados (application/json)</a></li>");
+		resp.getWriter().write("<li><a href='chamados/tiposchamados'>GET http://localhost:8080/chamados/tiposchamados (application/json)</a></li>");
 		resp.getWriter().write("</ul>");
 		
 		resp.getWriter().write("</body></html>");

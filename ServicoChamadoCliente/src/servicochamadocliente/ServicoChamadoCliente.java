@@ -14,6 +14,7 @@ import javax.swing.JTextField;
 
 import servico.IServicoChamado;
 
+@SuppressWarnings("serial")
 public class ServicoChamadoCliente extends JFrame {
 	
 	private List<IServicoChamado> servicosChamado;
