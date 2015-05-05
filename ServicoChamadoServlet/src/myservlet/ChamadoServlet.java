@@ -48,7 +48,7 @@ public class ChamadoServlet extends HttpServlet {
 		resp.getWriter().write("<li>POST http://localhost:8080/chamados (application/x-www-form-urlencoded)");
 		resp.getWriter().write("	<ul><li>headers (Content-Type:application/x-www-form-urlencoded)</li><li>body (tipo_chamado=PP&descricao=buraco+na+minha+rua&latitude=-9.6463367&longitude=-35.7352281)</li></ul></li>");
 		resp.getWriter().write("<li>PUT http://localhost:8080/chamados (application/x-www-form-urlencoded)");
-		resp.getWriter().write("	<ul><li>headers (Content-Type=application/x-www-form-urlencoded)</li><li>body (id=1430794777158&status=P)</li></ul></li>");
+		resp.getWriter().write("	<ul><li>headers (Content-Type:application/x-www-form-urlencoded)</li><li>body (id=1430794777158&status=P)</li></ul></li>");
 		resp.getWriter().write("<li><a href='chamados/lista'>GET http://localhost:8080/chamados/lista (application/json)</a></li>");
 		resp.getWriter().write("<li>GET http://localhost:8080/chamados/detalhes?id=1430793960316 (application/json)</li>");
 		resp.getWriter().write("</ul>");
