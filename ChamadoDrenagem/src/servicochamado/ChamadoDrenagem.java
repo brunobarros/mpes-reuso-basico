@@ -18,6 +18,7 @@ public class ChamadoDrenagem implements IServicoChamado {
 
 	public Map<String, String> getAtributosInput() {
 		Map<String, String> atributos = new HashMap<String, String>();
+		atributos.put("tipo_chamado", "text");
 		atributos.put("descricao", "text");
 		atributos.put("latitude", "double");
 		atributos.put("longitude", "double");

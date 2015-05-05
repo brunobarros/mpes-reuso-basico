@@ -7,7 +7,7 @@ public class ChamadoRepository {
 	
 	private static List<Chamado> chamados;
 
-	public List<Chamado> getChamados() {
+	public static List<Chamado> getChamados() {
 		return chamados;
 	}
 	

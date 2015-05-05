@@ -17,6 +17,10 @@ public class TipoChamado {
 		this.descricao = descricao;
 	}
 	
+	public TipoChamado(String codigo) {
+		this.codigo = codigo;
+	}
+
 	public String getCodigo() {
 		return codigo;
 	}
