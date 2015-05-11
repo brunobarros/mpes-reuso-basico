@@ -27,7 +27,10 @@ public class TipoChamadoServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("application/json");
-		
+		resp.addHeader("Access-Control-Allow-Origin", "*");
+		resp.addHeader("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, OPTIONS");
+		resp.addHeader("Access-Control-Allow-Headers", "Content-Type, Content-Range, Content-Disposition, Content-Description");
+				
 		if (servicoChamados == null || servicoChamados.isEmpty()) {
 			resp.getWriter().write("Serviços indisponíveis");
 		} else {

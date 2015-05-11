@@ -41,11 +41,29 @@ public class ChamadoServlet extends HttpServlet {
 		
 		resp.getWriter().write("<ul>");
 		resp.getWriter().write("<li><a href='chamados/tiposchamados'>GET http://localhost:8080/chamados/tiposchamados (application/json)</a></li>");
+		resp.getWriter().write("<li>POST http://localhost:8080/chamados/ (application/json)</li>");
 		resp.getWriter().write("</ul>");
 		
 		resp.getWriter().write("</body></html>");
 	}
 
+	@Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+//        User user = userService.find(username, password);
+//
+//        if (user != null) {
+//            request.getSession().setAttribute("user", user);
+//            response.sendRedirect("home");
+//        }
+//        else {
+//            request.setAttribute("error", "Unknown user, please try again");
+//            request.getRequestDispatcher("/login.jsp").forward(request, response);
+//        }
+    }
+
+	
 	public void addServicosChamado(List<IServicoChamado> servicosChamado) {
 		this.servicoChamados = servicosChamado;
 	}
