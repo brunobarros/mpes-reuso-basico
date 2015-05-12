@@ -6,14 +6,14 @@ import java.util.Map;
 import servico.IServicoChamado;
 
 
-public class ChamadoArborizacao implements IServicoChamado {
+public class ChamadoDrenagem implements IServicoChamado {
 
 	public String getSigla() {
-		return "A";
+		return "D";
 	}
 
 	public String getDescricao() {
-		return "Arborização (poda de árvore)";
+		return "Drenagem (desentupimento de galeria)";
 	}
 
 	public Map<String, String> getAtributosInput() {

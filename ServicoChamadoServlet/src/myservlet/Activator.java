@@ -35,6 +35,8 @@ public class Activator implements BundleActivator {
 		if (http != null) {
 			http.registerServlet("/chamados", new ChamadoServlet(servicosChamado), null, null);
 			http.registerServlet("/chamados/tiposchamados", new TipoChamadoServlet(servicosChamado), null, null);
+			http.registerServlet("/chamados/lista", new ListarChamadoServlet(), null, null);
+			http.registerServlet("/chamados/detalhes", new DetalhesChamadoServlet(), null, null);
 			System.out.println("Servlet(s) principais registrado(s)");
 		}
 	}
