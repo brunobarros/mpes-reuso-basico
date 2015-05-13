@@ -55,7 +55,8 @@ public class ChamadoServlet extends HttpServlet {
 		resp.getWriter().write("</ul>");
 
 		resp.getWriter().write("<h3>Servlet de Mapas</h3>");
-		resp.getWriter().write("<a href='chamados/mapa?lat=-8.0372619&lng=-34.8713684'>http://localhost:8080/chamados/mapa?lat=-8.0372619&lng=-34.8713684</a>");
+		resp.getWriter().write("<a href='http://localhost:8080/chamados/mapa?lat=-8.0372619&lng=-34.8713684'>http://localhost:8080/chamados/mapa?lat=-8.0372619&lng=-34.8713684</a>");
+		resp.getWriter().write("<p>Obs.: Para exercitar o dinamismo, desative o bundle de mapas ativado, e em seguida ative o outro bundle de mapas. Atualize a página e observe que outro motor de mapa é exibido.</p>");
 		
 		resp.getWriter().write("</body></html>");
 	}
