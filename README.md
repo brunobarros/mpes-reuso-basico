@@ -22,10 +22,12 @@ ps. Lembrando que é para o dia 13/05, precisamos que seja entregue no máximo d
 # Setup
 
 * Importar projetos no Eclipse
-* Importar o Launch configuration na raiz do repositório: Servico Chamado Servlet (OSGi).launch
+* Importar o Launch configuration na raiz do repositório: Servico Chamado Servlet (OSGi).launch (este contém todos os componentes necessários para rodar o projeto)
 * Run do framework OSGi com os bundles do projeto 
 * executar stop e start do bundle de servlet para deixá-lo por último na prioridade dos bundles e que os tipos de chamados fiquem disponíveis 
   * lb (listar os bundles)
   * stop [id do bundle ServicoChamadoServlet]
   * start [id do bundle ServicoChamadoServlet]
 * Acessar http://localhost:8080/chamados
+
+Para exercitar o dinamismo da plataforma, deve-se parar algum bundle de tipo de chamado e o bundle ServicoChamadoServlet, em seguida iniciar apenas o ServicoChamadoServlet, atualizar a página do sistema e verificar que o tipo de chamado não está mais disponíveis.
