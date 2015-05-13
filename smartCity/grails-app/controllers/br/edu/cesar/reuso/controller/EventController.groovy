@@ -165,15 +165,22 @@ class EventController extends CRUDController {
         Set<EventUiElement> elements = []
 
         def http = new HTTPBuilder('http://localhost:8080/chamados/tiposchamados')
-        http.request(Method.GET, ContentType.JSON) { req ->
-            response.success = { resp, json ->
-                // handle response
-                elements = json.collect {
-                    new EventUiElement(id: it?.codigo, description: it?.descricao)
+        try {
+            http.request(Method.GET, ContentType.JSON) { req ->
+                response.success = { resp, json ->
+                    // handle response
+                    elements = json.collect {
+                        new EventUiElement(id: it?.codigo, description: it?.descricao)
+                    }
                 }
             }
         }
-        elements
+        catch (Exception ex) {
+            ex.printStackTrace()
+            elements.add(new EventUiElement(id:'-1', description: 'Serviços indisponíveis'))
+        }
+
+        return elements
     }
 
     private List<Event> loadEvents() {
