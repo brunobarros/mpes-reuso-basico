@@ -1,0 +1,245 @@
+html,body,h1,h2,h3,h4 {font-family:'Myriad Set Pro' !important; font-style:normal; font-weight:400}
+h1 {color:#8e8e8e !important}
+h1 a {color:#41affb !important}
+h1 a:hover {color:#30a0ef !important}
+a {color:#1f404e !important}
+.txt-right {text-align:right !important}
+.txt-center {text-align:center !important}
+.txt-left {text-align:left !important}
+.txt-bold {font-weight:700 !important}
+.txt-red {color:red !important}
+.txt-gray {color:gray !important}
+.txt-light-gray {color:#c4c4c4 !important}
+.txt-has-success {display:block; color:#468846 !important}
+.txt-has-error {display:block; color:#ad1c19 !important}
+.txt-has-warning {display:block; color:#947108 !important}
+.fa, .glyphicon-custom-grid {font-size:14px !important; line-height:14px !important}
+.fa.draft-status {margin-left:5px !important; color:orange !important}
+.fa.fa-title-breadcrumb {font-size:30px !important}
+.draft-status .fa-draft-txt {display:inline-block; padding-left:5px; font-size:12px !important}
+.fa.fa-new-tool-spec {margin-left:5px !important; color:#5cb85c; font-size:18px !important}
+.fa.fa-context-helper {margin-top:10px !important; color:#363636; font-size:18px !important}
+#users-tbody .logged-user .fa-user {color:#3fc93f !important; visibility: visible !important}
+
+/* Global */
+html,body {min-width:1280px !important; height:100% !important} /* The html and body elements cannot have any padding or margin. */
+body {background-color:#fff}
+code {font-family:'Menlo Regular'; font-size:80%}
+label {padding-right:0 !important; font-weight:normal !important}
+.block {display:block}
+.inline-block {display:inline-block !important}
+.popover {z-index: 10100; font-size:80px !important}
+blockquote {font-family:'Myriad Set Pro' !important; font-weight:200 !important; border-left:5px solid #d3d3d3; padding:0; margin:0}
+.radio, .checkbox {margin:0; font-size:12px !important}
+.radio + .radio, .checkbox + .checkbox {margin-top:5px}
+ul {list-style:none}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12,
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {padding-right:10px !important}
+#wrap {height:100% !important; min-height:100% !important}
+.badge {padding:3px 5px 1px !important; font-family:'Myriad Set Pro'; font-size:11px !important; font-weight:100 !important; color:#fff !important; text-transform: uppercase; background-color:#666 !important}
+
+
+/* Header */
+.header.header-bg {padding:0px 30px 0px !important; background:#444 !important; border:0; -webkit-border-radius:0 !important}
+.navbar-header {padding-top:1px !important}
+.navbar-header .sys-logo {display:inline-block; margin-right:4px; font-size:180% !important; color:#fff}
+.navbar-header .sys-name {display:inline-block; font-family:'Myriad Web Pro' !important; font-style:normal !important; font-size:200% !important; font-stretch:ultra-condensed !important; color:#fff}
+.user-profile {position:absolute; top:12px; right:30px}
+.user-profile a {margin-left:5px; color:#e7e7e7 !important}
+.user-profile a:hover {color:white !important}
+/* Main Content */
+.main-content {padding:10px 30px 0px !important}
+.main-content .page-submenu {float:right !important; padding-top:4px}
+.main-content .page-submenu li {margin-left:6px !important}
+.main-content .page-submenu li a {padding:6px 15px 3px; font-weight:200; text-transform:uppercase}
+.main-content .page-title, .main-content .error-page-title h1 {margin:0; margin-bottom:20px}
+.main-content h1.page-title {padding-bottom:20px; border-bottom:solid 1px #ddd}
+.main-content .error-page-title {width:600px; margin: 50px auto 0}
+.main-content .error-page-title h1, .main-content .error-page-title p {text-align:center}
+
+.main-content .notifications-navigation {margin-bottom:20px !important}
+.main-content .action-bar-top {margin-bottom:15px !important}
+.main-content .search-filter {float:left}
+.main-content .search-filter input {display:inline; width:350px; margin-right:-4px; -webkit-border-bottom-right-radius:0px; -webkit-border-top-right-radius:0px}
+.main-content .search-filter button {display:inline; margin:0; padding:5px 10px 6px; -webkit-border-bottom-left-radius:0px; -webkit-border-top-left-radius:0px}
+.main-content .search-filter #open-side-filter {-webkit-border-radius:5px !important}
+
+.content-spacer {width:50px; height:30px; padding:0}
+
+/* Messages */
+.alert {padding-right:30px; font-family:Menlo Regular; font-size:12px}
+.alert .close {float:right; margin-top:-3px !important; margin-right:-20px; padding:0; cursor:pointer; background:transparent; border:0; -webkit-appearance:none}
+.alert .close {font-size:22px; font-weight:bolder; line-height:1; color:#b43f3b; text-shadow:0 1px 0 #ffffff; opacity:0.4; filter:alpha(opacity=40)}
+.alert .close:hover, .close:focus {color:#b43f3b; text-decoration:none; opacity:0.9; filter:alpha(opacity=90)}
+.alert-success {position: fixed; z-index: 999; left: 35%}
+.msg-dialog, .msg-dialog.fade {position:relative; left:0;right:0;top:0px; z-index:999; opacity:1; transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out}
+.msg-dialog {position:absolute; top:20px; right:20px; left:20px; z-index:-1; opacity:0; transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out}
+.msg-floater, .msg-floater.fade {position:fixed; top:65px; right:250px; left:250px; z-index:999; opacity:1; transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out}
+.msg-floater {opacity:0; transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out}
+.well.draft-info {float:left !important; width:250px !important; margin:-10px 0 0 20px !important; padding:9px !important; font-size:14px !important; color:#aeaeae !important; background-color:#f9f9f9 !important; border:1px solid #e7e7e7 !important}
+.well.draft-info a {color:#41affb !important}
+.draft-info .fa-draft-flag {float:left; margin:8px 10px 0 0 !important; font-size:30px !important; color:orange !important}
+
+/* Pagination */
+.pagination-container {margin:0 auto 20px; -webkit-border-radius:5px; background:#f9f8f8}
+.pagination-msg {padding:12px 16px 12px; float:left; font-size:13px; color:#686868 !important}
+.pagination-msg .a-icon {margin-left:5px; font-size:15px !important; color:#3484d9 !important;}
+.pagination-msg .a-icon:hover {color:#b43f3b !important;}
+.pagination {margin:10px 10px !important}
+.pagination > a, .pagination > span {position:relative; float:left; margin-left:-1px; padding:2px 6px 0px !important; font-size:13px; text-decoration:none; background-color:#ffffff; border:1px solid #dddddd}
+.pagination > a:hover {background-color:#eaeaea!important}
+.pagination .currentStep {color:#fff !important; cursor:default; background-color:#686868 !important; border-color:#686868 !important}
+.pagination .gap {padding-right:3px !important; padding-left:3px !important; cursor:default; background:none !important; border-top:none !important; border-bottom:none !important}
+
+/* Buttons */
+.btn {margin-bottom:5px; padding-right:20px; padding-left:20px; font-size:15px !important; color:#ffffff !important}
+.btn-default {background-color:#76949f !important; border-color:#76949f !important}
+.btn-default:hover, .btn-default:focus, .btn-default:active {background-color:#42606d !important; border-color:#42606d !important}
+.btn-primary {background-color:#3484d9 !important; border-color:#357fcd !important}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {background-color:#2f74be !important; border-color:#2b6fb7 !important}
+.btn-secondary {color:#686868 !important; background-color:#fff !important; border-color:#ccc !important}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {background-color:#f5f5f5 !important; border-color:#ccc !important}
+.btn-danger {background-color:#cb4844 !important; border-color:#cb4844 !important}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {background-color:#b43f3b !important; border-color:#b43f3b !important}
+.btn-info {background-color:#6ba9a5 !important; border-color:#6ba9a5 !important}
+.btn-info:hover, .btn-info:focus, .btn-info:active {background-color:#549490 !important; border-color:#549490 !important}
+.btn-menu {font-weight:600 !important; color:#686868 !important; background-color:#fff !important; border-color:#ccc !important}
+.btn-menu:hover, .btn-menu:focus {background-color:#f5f5f5 !important; border-color:#ccc !important}
+.btn-menu.active {color:#ccc !important; background-color:#333 !important; border-color:#666 !important; cursor:default}
+
+/* Table */
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {background-color:#fbfbfb !important}
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {background-color:#f5f5f5 !important}
+table.grid thead {font-size:16px; color:#686868; cursor:pointer}
+table.grid thead tr th {padding:8px !important; white-space:nowrap}
+table thead tr th {background-image:none !important}
+table.grid thead tr th:hover {background:none !important}
+table.grid tbody tr td input {margin-top:2px}
+table.grid tbody tr:hover td a, table.grid tbody tr:hover td span.block, table.grid tbody tr td a:focus {color:#5d5d5d !important; text-decoration:none; cursor:pointer}
+table.grid tbody tr.tr-empty-grid td {border-top:0 !important}
+table.grid tbody tr.tr-empty-grid:hover td  {background:#f9f9f9 !important}
+table.grid tbody tr td .a-icon {display:inline; visibility:hidden; margin-right:3px; font-size:16px !important}
+table.grid tbody tr:hover td .a-icon, table.grid tbody tr td .a-icon-user {visibility:visible}
+
+.table-container {padding:0 !important}
+.table-content, .table-filter {padding:0 !important; border-top:0 !important}
+.table-filter {width:250px; padding:0 30px !important; border-right:1px solid #dddddd}
+.table-filter.no-filter {width:0 !important; padding:0 !important; border-right:0 !important}
+.table-filter .filter-container {padding:0}
+.table-filter .filter-container .page-title {margin:0; padding:0px; font-size:110%; font-weight:600; color:#8e8e8e; text-transform:uppercase}
+.table-filter .filter-container .reset-filter {position: relative; float: right; }
+.table-filter .filter-container .filter-item {margin:0px; padding:0}
+.table-filter .filter-container .filter-item .panel {margin:10px 0px}
+.table-filter .filter-container .filter-item .panel-body {padding:10px 10px 0 10px !important}
+.table-filter .filter-container .filter-item .panel-body ul {padding-left:0px !important}
+.table-filter .filter-container fieldset {float:right}
+
+.sortable a {padding-right:16px; font-size:14px; text-decoration:none; background:url(../images/icon-sort.png) top right no-repeat; background-size:14px 14px !important}
+.sortable:hover a {background-image:url(../images/icon-sort-hover.png)}
+.sortable.asc a {background-image:url(../images/icon-sort-asc.png) !important}
+.sortable.asc a:hover {background-image:url(../images/icon-sort-asc-hover.png) !important}
+.sortable.desc a {background-image:url(../images/icon-sort-desc.png) !important}
+.sortable.desc a:hover {background-image:url(../images/icon-sort-desc-hover.png) !important}
+
+.well.publish-changes {padding:10px 10px 5px !important}
+table.publish-changes-table thead tr {background:#ddd}
+table.publish-changes-table tbody tr td {vertical-align:middle !important}
+table.publish-changes-table tbody tr td span {color:#41affb !important}
+
+.form-horizontal {margin-top:15px; margin-bottom:40px}
+.form-group {margin-bottom:15px !important}
+.form-control {padding:5px !important}
+.form-group .txt-has-error {display:none}
+.form-group .badge {min-width:24px; margin-left:4px; line-height:1.5; color:#fff; text-align:center; white-space:nowrap; vertical-align:top; background-color:#929292; border-radius:10px}
+.has-error .txt-has-error {display:block !important}
+.has-error .badge {background-color:#b94a48}
+
+/* Modals */
+.modal-glyphicon {float:left; padding:15px 30px 0 15px}
+.modal-glyphicon .glyphicon, .modal-glyphicon .fa {font-size:50px !important}
+.modal-glyphicon .glyphicon-ok-sign, .modal-glyphicon .fa-ok-circle {color:green !important}
+.modal-glyphicon .glyphicon-remove-sign, .modal-glyphicon .fa-remove-circle {color:red !important}
+.modal-glyphicon .glyphicon-exclamation-sign, .modal-glyphicon .fa-exclamation-circle {color:orange !important}
+.modal-header {padding:10px 25px !important; background:#f8f8f8; -webkit-border-top-right-radius:5px; -webkit-border-top-left-radius:5px}
+.modal-header .close {float:right; margin-top:0; margin-right:0px; padding:0; cursor:pointer; background:transparent; border:0; -webkit-appearance:none}
+.modal-header .close {font-size:34px; font-weight:bolder; line-height:1; color:#b43f3b; text-shadow:0 1px 0 #ffffff; opacity:0.5; filter:alpha(opacity=50)}
+.modal-header .close:hover, .modal-header .close:focus {color:#b43f3b; text-decoration:none; opacity:1; filter:alpha(opacity=100)}
+.modal-header h2 {color:#8e8e8e}
+.modal-body-msg {padding:0 50px}
+.modal-body-msg p {margin:0; font-size:15px; vertical-align:middle}
+.modal-body .modal-subtitle {margin-top:0 !important; padding:0 30px !important}
+.modal-body .fieldcontain {padding:0 25px}
+.modal-body .fieldcontain label {font-size:110% !important}
+.modal-body .fieldcontain input, .modal-body .fieldcontain select, .modal-body .fieldcontain textarea {padding:5px !important; font-family:'Myriad Set Pro'; font-size:110% !important; color:#595959 !important}
+.modal-body .fieldcontain select {display:inline; padding:0 !important}
+.modal-body .fieldcontain span.help-block {padding-left:10px; font-size:15px; font-style:italic}
+.modal-body .graphic-preview .drop_zone, .modal-body .graphic-preview .drop_zone img {width:120px !important; max-width:120px !important; min-height:120px !important}
+.modal-body .tool-specs-label {margin-bottom:0px !important}
+.modal-body .tool-specs-label a {padding-top:2px !important}
+.modal-body .tool-spec-form {margin-bottom:10px; padding:10px; background:#f8f8f8; -webkit-border-radius:5px}
+.modal-body .tool-versions .checkbox {margin-right:25px; padding-top:7px}
+.modal-body .change-type-required {margin-bottom:0px !important}
+.modal-body .change-type-required label {width:120px; padding-top:5px !important; padding-right:0px !important; text-align:left}
+.modal-body .range-values #labelRed, .modal-body .range-values #labelYellow, .modal-body .range-values #labelGreen {display:inline}
+.modal-body .range-values #labelRed {margin-right:60px}
+.modal-body .range-values #labelYellow {margin-right:35px}
+.modal-content .duallistbox {padding:0 30px !important}
+.modal-content .duallistbox .tab-content {margin-bottom:15px; padding:15px 0 0 !important}
+.modal-footer {margin-top:0px !important; padding:10px 15px 10px; text-align:right; background:#f8f8f8; -webkit-border-bottom-right-radius:5px; -webkit-border-bottom-left-radius:5px}
+.modal-footer button {margin-bottom:0px !important}
+.dropdown-backdrop {z-index:0 !important}
+
+
+/* Measures */
+.margin0 {margin:0 !important}
+.mTop0 {margin-top:0px !important}
+.mTop10 {margin-top:10px !important}
+.mTop20 {margin-top:20px !important}
+.mTop25 {margin-top:25px !important}
+.mRight0 {margin-right:0px !important}
+.mRight10 {margin-right:10px !important}
+.mRight50 {margin-right:50px !important}
+.mBottom0 {margin-bottom:0px !important}
+.mBottom10 {margin-bottom:10px !important}
+.mBottom15 {margin-bottom:15px !important}
+.mBottom20 {margin-bottom:20px !important}
+.mBottom30 {margin-bottom:30px !important}
+.mBottom40 {margin-bottom:40px !important}
+.mLeft5 {margin-left:5px !important}
+.mLeft20 {margin-left:20px !important}
+.mLeft50 {margin-left:50px !important}
+.mLeft145 {margin-left:145px !important}
+.padding0 {padding:0px !important}
+.padding10 {padding:10px !important}
+.pTop0 {padding-top:0px !important}
+.pTop3 {padding-top:3px !important}
+.pRight0 {padding-right:0 !important}
+.pRight10 {padding-right:10px !important}
+.pRight15 {padding-right:15px !important}
+.pRight20 {padding-right:20px !important}
+.pLeft0 {padding-left:0px !important}
+.pLeft10 {padding-left:10px !important}
+.pLeft20 {padding-left:20px !important}
+.pLeft60 {padding-left:60px !important}
+.width30 {width:30px !important}
+.width50 {width:50px !important}
+.width60 {width:60px !important}
+.width70 {width:70px !important}
+.width80 {width:80px !important}
+.width90 {width:90px !important}
+.width100 {width:100px !important}
+.width120 {width:120px !important}
+.width180 {width:180px !important}
+.width240 {width:240px !important}
+.width350 {width:350px !important}
+.width800 {width:800px !important}
+.width1100 {width:1100px !important}
+.width100p {width:100% !important}
+.height180 {height:180px !important}
+.widthAuto {width: auto !important}
+
+
+/* Backdrop fix */
+.modal-backdrop {z-index:0!important}
