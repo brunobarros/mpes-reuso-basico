@@ -1,0 +1,100 @@
+import org.grails.gradle.plugin.tasks.GrailsTask
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:2.0.1"
+    }
+}
+
+version "00.00.02"
+group "smartCity"
+
+apply plugin: "grails"
+
+repositories {
+    grails.central()
+}
+
+grails {
+    grailsVersion = '2.4.3'
+    groovyVersion = '2.3.6'
+    springLoadedVersion '1.1.3'
+}
+
+dependencies {
+    bootstrap 'org.grails.plugins:tomcat:7.0.50' // No container is deployed by default, so add this
+
+    compile('org.codehaus.groovy.modules.http-builder:http-builder:0.7.1') {
+        exclude module: 'xml-apis'
+    }
+    // plugins for the compile step
+    compile "org.grails.plugins:scaffolding:2.1.2"
+    compile 'org.grails.plugins:cache:1.1.7'
+    compile "org.grails.plugins:asset-pipeline:1.9.6"
+    compile 'org.grails.plugins:spring-security-core:2.0-RC4'
+    compile 'org.apache.httpcomponents:httpclient:4.4.1'
+    compile 'org.apache.httpcomponents:httpmime:4.4.1'
+
+    // plugins needed at runtime but not for compilation
+    runtime('org.grails.plugins:hibernate4:4.3.5.5') {
+        exclude module: 'xml-apis'
+    }
+    runtime "org.grails.plugins:database-migration:1.4.0"
+    runtime "org.grails.plugins:jquery:1.11.1"
+    runtime 'mysql:mysql-connector-java:5.1.29'
+    runtime 'org.grails:grails-docs:2.3.6'
+
+    test 'org.grails:grails-datastore-test-support:1.0.1-grails-2.4'
+    test('org.grails.plugins:code-coverage:2.0.3-3') {
+        exclude module: "xml-apis"
+        exclude module: "jaxen"
+    }
+
+    test 'org.spockframework:spock-grails-support:0.7-groovy-2.0'
+    test 'cglib:cglib-nodep:3.1'
+}
+
+task showCache << {
+    configurations.compile.each { println it }
+}
+
+task 'make-war'(type: GrailsTask) {
+    String environment = 'prod'
+
+    doFirst {
+        String appVersion = 'not-defined'
+        if (project.hasProperty('v')) {
+            println "version defined to $v"
+            appVersion = "$v"
+        }
+        ant.propertyfile(file: "application.properties") {
+            entry(key: "app.version", type: "string", operation: "=", value: appVersion)
+        }
+    }
+
+    if (project.hasProperty('e')) {
+        println "Environment set to $e"
+        environment = "$e"
+    }
+
+    command 'war'
+    env environment
+}
+
+task 'war-prod'(type: GrailsTask) {
+    doFirst {
+        String appVersion = 'not-defined'
+        if (project.hasProperty('v')) {
+            println "version defined to $v"
+            appVersion = "$v"
+        }
+        ant.propertyfile(file: "application.properties") {
+            entry(key: "app.version", type: "string", operation: "=", value: appVersion)
+        }
+    }
+    command 'war'
+    env 'prod'
+}
